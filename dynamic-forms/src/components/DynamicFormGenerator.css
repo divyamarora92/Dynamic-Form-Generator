@@ -1,0 +1,11 @@
+.dynamicFormContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 10px 100px;
+  height: 90vh;
+}
+
+.dynamicFormContainer h2 {
+  margin-top: 0;
+}

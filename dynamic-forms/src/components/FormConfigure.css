@@ -1,0 +1,83 @@
+.sectionContainer {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.configSection {
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  overflow: auto;
+}
+
+.configSection h2 {
+  margin-top: 0;
+}
+
+.formField {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.formField label {
+  display: block;
+  margin-bottom: 5px;
+  width: 90%;
+}
+
+.formField input[type="text"],
+.formField select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.formField button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.formField button:hover {
+  background-color: #c0392b;
+}
+
+.jsonSection {
+  margin-top: 20px;
+  width: 50%;
+}
+
+.jsonSection h2 {
+  margin-top: 0;
+}
+
+.jsonSection textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.jsonSection button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.jsonSection button:hover {
+  background-color: #2980b9;
+}

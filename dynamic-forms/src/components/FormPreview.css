@@ -1,0 +1,57 @@
+.previewSection {
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  overflow: auto;
+}
+
+.previewSection h2 {
+  margin-top: 0;
+}
+
+.formField {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.formField label {
+  display: block;
+  margin-bottom: 5px;
+  width: 80%;
+}
+
+.formField input[type="text"],
+.formField textarea,
+.formField select {
+  width: 80%;
+  padding: auto auto;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.formField input[type="checkbox"],
+.formField input[type="radio"] {
+  margin-right: 5px;
+}
+
+.formField .error-message {
+  color: #e74c3c;
+  font-size: 0.875em;
+}
+
+button[type="submit"] {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #2ecc71;
+}
