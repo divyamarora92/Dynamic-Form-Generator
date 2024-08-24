@@ -39,9 +39,9 @@ The main component that integrates `FormConfigure` and `FormPreview`. It manages
 
 1. **Clone the Repository**:
 
-   ```bash
-   git clone https://github.com/divyamarora92/Dynamic-Form-Generator.git 
-   ```
+```bash
+git clone https://github.com/divyamarora92/Dynamic-Form-Generator.git 
+```
 
 2. **Install Dependencies: Make sure you have Node.js installed. Then, run:**
 
@@ -72,6 +72,3 @@ The application will be available at http://localhost:3000.
    - Save your form configuration as JSON using the "Save Configuration" button.
    - Load a saved configuration by pasting JSON data into the textarea and clicking "Load Configuration."
 
-```
-
-```
