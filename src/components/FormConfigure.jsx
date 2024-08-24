@@ -4,6 +4,7 @@ import "./FormConfigure.css";
 const FormConfigure = ({ fields, setFields, setValues }) => {
   const [formJson, setFormJson] = useState("");
 
+  //1. creates a new field with default values and adds it to the list of fields.
   const addField = () => {
     setFields([
       ...fields,
@@ -11,6 +12,7 @@ const FormConfigure = ({ fields, setFields, setValues }) => {
     ]);
   };
 
+  //2. removes a field by its ID and updates the form values to remove the corresponding entry.
   const removeField = (id) => {
     setFields(fields.filter((field) => field.id !== id));
     setValues((prevValues) => {
@@ -20,6 +22,7 @@ const FormConfigure = ({ fields, setFields, setValues }) => {
     });
   };
 
+  //3. updates a specific field’s property based on user input."
   const handleFieldChange = (id, key, value) => {
     setFields(
       fields.map((field) =>
@@ -27,13 +30,15 @@ const FormConfigure = ({ fields, setFields, setValues }) => {
       )
     );
   };
-
+   
+  //4. converts the current fields configuration into a JSON string and updates the formJson state.
   const saveFormConfig = () => {
     const json = JSON.stringify(fields, null, 2);
     setFormJson(json);
     alert("Form configuration saved!");
   };
 
+  //5. parses the JSON from formJson and updates the fields and form values accordingly.
   const loadFormConfig = () => {
     try {
       const parsedFields = JSON.parse(formJson);

@@ -4,6 +4,7 @@ import "./FormPreview.css";
 const FormPreview = ({ fields, values, setValues }) => {
   const [errors, setErrors] = useState({});
 
+  // Form validation logic
   const validateForm = () => {
     const newErrors = {};
     fields.forEach((field) => {
@@ -19,6 +20,7 @@ const FormPreview = ({ fields, values, setValues }) => {
     setValues((prevValues) => ({ ...prevValues, [id]: value }));
   };
 
+  // submits the form
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
