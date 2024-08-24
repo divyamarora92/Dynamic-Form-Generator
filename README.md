@@ -35,14 +35,36 @@ Renders the form based on the configuration from `FormConfigure`. Users can:
 
 The main component that integrates `FormConfigure` and `FormPreview`. It manages the state for form fields and their values, coordinating between the configuration and preview.
 
+## Installation
+
+1. **Clone the Repository**:
+
+   ```bash
+   git clone https://github.com/divyamarora92/Dynamic-Form-Generator.git 
+   ```
+
+2. **Install Dependencies: Make sure you have Node.js installed. Then, run:**
+
+```bash
+npm install
+```
+
+3. **Start the Development Server:**
+
+```bash
+npm start
+The application will be available at http://localhost:3000.
+```
 
 ## Usage
 
 1. **Configure Form Fields**:
+
    - Use the `FormConfigure` section to add new fields, set field properties, and manage the JSON configuration.
    - Click "Add Field" to add a new field. Configure its label, type, options, and whether it is required.
 
 2. **Preview and Submit Form**:
+
    - Switch to the `FormPreview` section to see a live preview of your form.
    - Fill out the form and click "Submit" to check form validation and submission.
 
@@ -50,3 +72,6 @@ The main component that integrates `FormConfigure` and `FormPreview`. It manages
    - Save your form configuration as JSON using the "Save Configuration" button.
    - Load a saved configuration by pasting JSON data into the textarea and clicking "Load Configuration."
 
+```
+
+```
